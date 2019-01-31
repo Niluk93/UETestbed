@@ -9,6 +9,6 @@ public class UETestbedEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 
-		ExtraModuleNames.AddRange( new string[] { "UETestbed" } );
+		ExtraModuleNames.AddRange( new string[] { "UETestbed", "UETestbedEditor" } );
 	}
 }

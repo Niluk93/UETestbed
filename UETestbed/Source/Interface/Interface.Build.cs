@@ -2,17 +2,16 @@
 
 using UnrealBuildTool;
 
-public class UETestbed : ModuleRules
+public class Interface : ModuleRules
 {
-	public UETestbed(ReadOnlyTargetRules Target) : base(Target)
+	public Interface(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
-		
-        PublicDependencyModuleNames.AddRange(new string[] { "Interface", "Debug", "UETestbedBase", "Gameplay", "AI" });
+
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 		
