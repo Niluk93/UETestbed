@@ -7,8 +7,12 @@ public class Debug : ModuleRules
 	public Debug(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+
+        PublicIncludePaths.AddRange(new string[] { "Debug/Public" });
+
+        PrivateIncludePaths.AddRange(new string[] { "Debug/Private" });
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

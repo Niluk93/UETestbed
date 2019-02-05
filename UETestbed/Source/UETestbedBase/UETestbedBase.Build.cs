@@ -7,8 +7,12 @@ public class UETestbedBase : ModuleRules
 	public UETestbedBase(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+
+        PublicIncludePaths.AddRange(new string[] { "UETestbedBase/Public" });
+
+        PrivateIncludePaths.AddRange(new string[] { "UETestbedBase/Private" });
+
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

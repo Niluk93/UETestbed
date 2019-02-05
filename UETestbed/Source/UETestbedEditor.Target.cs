@@ -9,6 +9,6 @@ public class UETestbedEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
 
-		ExtraModuleNames.AddRange( new string[] { "UETestbed", "UETestbedEditor" } );
+		ExtraModuleNames.AddRange( new string[] { "Interface", "Debug", "UETestbedBase", "Gameplay", "AI", "UETestbed", "UI", "UETestbedEditor" } );
 	}
 }
