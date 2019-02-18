@@ -178,7 +178,8 @@ Engine/Source/Programs/AutomationTool/BuildGraph/BuildGraph.Automation.xml
 /Engine/Binaries/**/*.exp
 
 # Ignore content folders
-Content/
+Engine/**/Content/
+!/UETestbed/Content/**
 
 # Ignore DDC
 /Engine/DerivedDataCache/**
